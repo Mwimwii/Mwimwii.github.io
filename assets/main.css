@@ -1,9 +1,6 @@
-/*!
- * Bootstrap v4.5.2 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+---
+---
+
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700");
 :root {
   --blue: #007bff;
