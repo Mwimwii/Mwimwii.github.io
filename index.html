@@ -1,13 +1,11 @@
 ---
 layout: default
 title: Welcome to the CS50 Web Track
-youtube:
-    link1 : "www.1.com"
-    link2 : "www.2.com"
+links: ["www.1.com", "www.2.com"]
 ---
 
-{% for item in page.youtube%}
-key: {{item[0]}}<br>
+{% for link in page.links%}
+key: {{link}}<br>
 {% endfor %}
 <hr>
 
