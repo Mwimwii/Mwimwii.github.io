@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Day 1 HTTP
+title: Day 2 HTTP
 youtube: ["iSFEjQRulf0", "1u2qu-EmIRc"]
 ---
 
