@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta
+      property="og:description"
+      content="Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, and software engineering. Languages include C, Python, and SQL plus students’ choice of: HTML, CSS, and JavaScript (for web development); Java or Swift (for mobile app development); or Lua (for game development). Problem sets inspired by the arts, humanities, social sciences, and sciences. Course culminates in a final project. Designed for concentrators and non-concentrators alike, with or without prior programming experience. Two thirds of CS50 students have never taken CS before. Among the overarching goals of this course are to inspire students to explore unfamiliar waters, without fear of failure, create an intensive, shared experience, accessible to all students, and build community among students."
+    />
+
+    <meta property="og:image" content="" />
+    <meta property="og:title" content={{page.title}} />
+    <link href="../../favicon.ico?1596938307" rel="icon" />
+
+    <link href="style.css" rel="stylesheet" />
+    <title>{{page.title}}</title>
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-md">
+          <header>
+            <h1 data-id="this-was-cs5"><a href=#>This is CS50.GQ</a></h1>
+
+            <p>
+              <a href="https://www.harvard.edu/">Harvard University</a><br />
+              Fall 2020
+            </p>
+          </header>
+<!-- 
+          <button
+            class="btn btn-link d-block pl-0 pt-0"
+            data-search=""
+            data-target="#search"
+            data-toggle="modal"
+            type="button"
+          >
+            <i class="fas fa-search pr-2"></i>Search
+          </button> -->
+
+          <button
+            aria-controls="nav"
+            aria-expanded="false"
+            class="btn btn-sm collapsed d-md-none"
+            data-target="aside > nav"
+            data-toggle="collapse"
+          >
+            Menu
+          </button>
+
+          <nav class="collapse d-md-block" id="nav">
+            <hr />
+            <!-- Navigation -->
+            <ul>
+              <li data-marker="*"><a href=#>Day 1 HTTP & Git </a> C</li>
+              <li data-marker="*"><a href=#>Day 2</a> HTML, CSS</li>
+              <li data-marker="*"><a href=#>Day 3</a> Flask 🍼</li>
+              <li data-marker="*"><a href=#>Day 4</a> SQL</li>
+              <li data-marker="*"><a href=#>Day 5</a> ORMs, APIs</li>
+              <li data-marker="*"><a href="../6/">Day 6</a> JavaScript</li>
+              <li data-marker="*"><a href="../7/">Day 7</a> Frontends</li>
+              <li data-marker="*"><a href="../7/">Day 8</a> Django</li>
+              <li data-marker="*"><a href="../7/">Day 9</a>Testing, CI/CD</li>
+              <li data-marker="*"><a href="../7/">Day 10</a>Github, Travis CI</li>
+              <li data-marker="*"><a href="../7/">Day 11</a>Scalability</li>
+              <li data-marker="*"><a href="../7/">Day 12</a>Security</li>
+            </ul>
+            <!-- <ul>
+              <li data-marker="*"><a href="../../tracks/">Tracks</a></li>
+              <li data-marker="*">
+                <a href="../../project/">Final Project</a>
+              </li>
+            </ul> -->
+            <hr />
+            <ul>
+              <li data-marker="*">
+                <a href="https://cs50.harvard.edu/ed">Q&amp;A</a>
+              </li>
+            </ul>
+            <hr />
+
+            <ul>
+              <!-- FAQs -->
+              <!-- <li data-marker="*"><a href="../../faqs/">FAQs</a></li> -->
+              <li data-marker="*">
+                <a href="https://open.spotify.com/user/arubery/playlist/7juFEfDDYC3DBCoRq7W9Cp">Music</a >
+              </li>
+              <!-- <li data-marker="*"><a href="../../hours/">Office Hours</a></li>
+              <li data-marker="*"><a href="../../photos/">Photos</a></li>
+              <li data-marker="*"><a href="../../sections/">Sections</a></li>
+              <li data-marker="*"><a href="../../staff/">Staff</a></li>
+              <li data-marker="*">
+                <a href="../../supersections/">Supersections</a>
+              </li>
+              <li data-marker="*"><a href="../../syllabus/">Syllabus</a></li>
+              <li data-marker="*"><a href="../../tutorials/">Tutorials</a></li> -->
+            </ul>
+            <hr />
+
+            <ul class="small">
+              <li data-marker="*">
+                <a href="https://ide.cs50.io/">CS50 IDE</a>
+              </li>
+              <li data-marker="*">
+                <a href="https://sandbox.cs50.io/">CS50 Sandbox</a>
+              </li>
+              <li data-marker="*">
+                <a href="https://sqlitebrowser.org/">DB Browser for SQLite</a>
+              </li>
+              <li data-marker="*">
+                <a href="https://harvard.cs50.me/">Gradebook</a>
+              </li>
+              <li data-marker="*">
+                <a href="https://man.cs50.io/">Manual Pages</a>
+              </li>
+              <li data-marker="*">
+                <a href="https://docs.python.org/3.7/search.html"
+                  >Python Documentation</a
+                >
+              </li>
+              <li data-marker="*">
+                <a href="https://stackoverflow.com/search">Stack Overflow</a>
+              </li>
+              <li data-marker="*">
+                <a href="https://cs50.readthedocs.io/style/c/">Style Guide</a>
+              </li>
+            </ul>
+
+            <hr />
+
+            <p style="font-size: initial">
+              With <a href="../../thanks/">thanks</a>  and
+              friends
+            </p>
+          </nav>
+
+          <footer></footer>
+        </aside>
+
+        <main class="col-md markdown-body">
+          <h1 id=#>{{page.title}}</h1>
+          {{ content }}
+
+
+          <ul>
+            <li data-marker="-">
+              Lecture
+              <ul>
+                <li data-marker="*"><a href="../../notes/1/">Notes</a></li>
+                <li data-marker="*">
+                  <a
+                    href="https://docs.google.com/presentation/d/191XW0DHWlW6WmAhYuFUYnZKUlDx0N4u4Fp81AeW-uNs/edit?usp=sharing"
+                    >Slides</a
+                  >
+                </li>
+                <li data-marker="-">
+                  Source Code
+                  <ul>
+                    <li data-marker="*">
+                      <a href="https://cdn.cs50.net/2019/fall/lectures/1/src1/"
+                        >Index</a
+                      >
+                    </li>
+                    <li data-marker="*">
+                      <a
+                        href="https://sandbox.cs50.io/4207bda7-c8f0-460f-8463-056b0af9380b"
+                        >Sandbox</a
+                      >
+                    </li>
+                    <li data-marker="*">
+                      <a
+                        href="https://cdn.cs50.net/2019/fall/lectures/1/src1.pdf"
+                        >PDF</a
+                      >
+                    </li>
+                    <li data-marker="*">
+                      <a
+                        href="https://cdn.cs50.net/2019/fall/lectures/1/src1.zip"
+                        >Zip</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li data-marker="*">
+                  <a
+                    href="https://www.youtube.com/embed/e9Eds2Rc_x8?rel=0&amp;showinfo=0"
+                    >Video</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li data-marker="*">
+              <a
+                href="https://vault.cs50.io/a900c9c5-fe4d-49ad-ad48-746f81448536"
+                >Orientation</a
+              >
+            </li>
+            <li data-marker="-">
+              Shorts
+              <ol>
+                <li>
+                  <a
+                    href="https://www.youtube.com/embed/q6K8KMqt8wQ?rel=0&amp;showinfo=0"
+                    >Data Types</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/embed/7apBtlEkJzk?rel=0&amp;showinfo=0"
+                    >Operators</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/embed/FqUeHzvci10?rel=0&amp;showinfo=0"
+                    >Conditional Statements</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/embed/QOvo-xFL9II?rel=0&amp;showinfo=0"
+                    >Loops</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/embed/lnYKOnz9ln8?rel=0&amp;showinfo=0"
+                    >Command Line</a
+                  >
+                </li>
+              </ol>
+            </li>
+            <li data-marker="-">
+              <a href="../../psets/1/">Problem Set 1</a>
+              <ul>
+                <li data-marker="+">
+                  Staff Solutions
+                  <ul>
+                    <li data-marker="*">
+                      <a href="../../quizzes/1/">Quiz 1</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </main>
+      </div>
+    </div>
+
+  </body>
+</html>
