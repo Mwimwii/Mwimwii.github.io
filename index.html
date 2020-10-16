@@ -1,8 +1,20 @@
 ---
 layout: default
 title: Welcome to the CS50 Web Track
-youtube: [1,2]
+youtube:
+    link1 : "www.1.com"
+    link2 : "www.2.com"
 ---
+
+{% for item in page.youtube%}
+key: {{item[0]}}<br>
+{% endfor %}
+<hr>
+
+<h2>data</h2>
+url: {{page.social['twitter'].url}}
+user: {{page.social['twitter'].user}}
+show: {{page.social['twitter'].show}}
 
 <h1 id="announcements">Announcements</h1>
 
