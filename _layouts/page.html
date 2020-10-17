@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="{{ page.lang | default: site.lang | default: "en-us" }}">
+
+    <head>
+
+        {%- include head.html -%}
+
+    </head>
+
+    <body>
+
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <aside class="col-md">
+ 
+                    <header>
+
+                        {%- capture header -%}{%- include header.md -%}{%- endcapture -%}
+                        {{- header | markdownify | replace: " id=", " data-id=" | strip -}}
+
+                    </header>
+
+                    {% if site.algolia -%}
+                    <button class="btn btn-link d-block pl-0 pt-0" data-search data-target="#search" data-toggle="modal" type="button">
+                        <i class="fas fa-search pr-2"></i>Search
+                    </button>
+                   {%- endif %}
+
+                    <button aria-controls="nav" aria-expanded="false" class="btn btn-sm collapsed d-md-none" data-target="aside > nav" data-toggle="collapse">
+                        Menu
+                    </button>
+
+                    <nav class="collapse d-md-block" id="nav">
+
+                        {%- capture nav -%}{%- include nav.md -%}{%- endcapture -%}
+                        {{- nav | markdownify | replace: " id=", " data-id=" | strip -}}
+
+                    </nav>
+
+                    <footer>
+
+                        {%- capture footer -%}{%- include footer.md -%}{%- endcapture -%}
+                        {{- footer | markdownify | replace: " id=", " data-id=" | strip -}}
+
+                    </footer>
+
+                </aside>
+
+                <main class="col-md markdown-body">
+
+                    {{ content }}
+
+                </main>
+
+            </div>
+
+        </div>
+
+ 
+    </body>
+
+</html>

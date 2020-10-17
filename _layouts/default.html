@@ -1,32 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <meta
-      property="og:description"
-      content="Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, and software engineering. Languages include C, Python, and SQL plus students’ choice of: HTML, CSS, and JavaScript (for web development); Java or Swift (for mobile app development); or Lua (for game development). Problem sets inspired by the arts, humanities, social sciences, and sciences. Course culminates in a final project. Designed for concentrators and non-concentrators alike, with or without prior programming experience. Two thirds of CS50 students have never taken CS before. Among the overarching goals of this course are to inspire students to explore unfamiliar waters, without fear of failure, create an intensive, shared experience, accessible to all students, and build community among students."
-    />
+    {%- include head.html -%}
 
-    <meta property="og:image" content="" />
-    <meta property="og:title" content={{page.title}} />
-    <link href="../../favicon.ico?1596938307" rel="icon" />
-
-    <link href="/assets/css/main.css" rel="stylesheet" />
-    <title>{{page.title}}</title>
-  </head>
+</head>
 
   <body>
 
     <div class="container-fluid">
       <div class="row">
-        <aside class="col-md">
+        <aside class="col-md" >
           <header>
-            <h1 data-id="this-was-cs5"><a href=#>This is CS50.GQ</a></h1>
+            <h1 data-id="this-was-cs5"><a href="/">This is CS50.GQ</a></h1>
 
             <p>
               <a href="https://www.harvard.edu/">Harvard University x Mulungushi University</a><br />
@@ -58,18 +45,9 @@
             <hr />
             <!-- Navigation -->
             <ul>
-              <li data-marker="*"><a href=#>Day 1 HTTP & Git </a> C</li>
-              <li data-marker="*"><a href=#>Day 2</a> HTML, CSS</li>
-              <li data-marker="*"><a href=#>Day 3</a> Flask 🍼</li>
-              <li data-marker="*"><a href=#>Day 4</a> SQL</li>
-              <li data-marker="*"><a href=#>Day 5</a> ORMs, APIs</li>
-              <li data-marker="*"><a href="../6/">Day 6</a> JavaScript</li>
-              <li data-marker="*"><a href="../7/">Day 7</a> Frontends</li>
-              <li data-marker="*"><a href="../7/">Day 8</a> Django</li>
-              <li data-marker="*"><a href="../7/">Day 9</a>Testing, CI/CD</li>
-              <li data-marker="*"><a href="../7/">Day 10</a>Github, Travis CI</li>
-              <li data-marker="*"><a href="../7/">Day 11</a>Scalability</li>
-              <li data-marker="*"><a href="../7/">Day 12</a>Security</li>
+              {% for day  in site.days %}
+              <li data-marker="*"><a href="{{day.url}}">Day {{day.day}}</a> {{day.title}}</li>
+              {% endfor %}
             </ul>
             <!-- <ul>
               <li data-marker="*"><a href="../../tracks/">Tracks</a></li>
@@ -135,8 +113,7 @@
             <hr />
 
             <p style="font-size: initial">
-              With <a href="../../thanks/">thanks</a>  and
-              friends
+              by<a href="github.com/mwimwii/mwiimwii.github.io">Mwila</a>
             </p>
           </nav>
 
@@ -144,11 +121,10 @@
         </aside>
 
         <main class="col-md markdown-body">
-          <h1 id=#>{{page.title}}</h1>
           {{ content }}
 
 
-          <ul>
+          <!-- <ul>
             <li data-marker="-">
               Lecture
               <ul>
@@ -249,7 +225,7 @@
                 </li>
               </ul>
             </li>
-          </ul>
+          </ul> -->
         </main>
       </div>
     </div>
