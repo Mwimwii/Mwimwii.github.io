@@ -1,2 +1,11 @@
 name: CS50 Web Development
 markdown: kramdown
+collections:
+  days:
+    output: true
+    permalink: /days/:path
+    sort_by: ord_day
+defaults:
+  sass:
+    load_paths:
+      - _sass

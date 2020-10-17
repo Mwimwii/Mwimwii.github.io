@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Welcome to the CS50 Web Track
-youtube: [1,2]
 ---
+{% for link in page.youtube %}
+<h1 id=#>Day {{page.day}}</h1>
 
 <div
 class="border embed-responsive embed-responsive-16by9"
@@ -10,9 +11,10 @@ data-video=""
 style="max-width: 720px"
 >
 <iframe
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen=""
-  class="embed-responsive-item"
-  src="https://www.youtube.com/embed/{{ post.url }}?modestbranding=1&amp;rel=0&amp;showinfo=0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen=""
+class="embed-responsive-item"
+src="https://www.youtube.com/embed/{{ link }}?modestbranding=1&amp;rel=0&amp;showinfo=0"
 ></iframe>
 </div>
+{% endfor %}
