@@ -1,10 +1,18 @@
 name: CS50 Web Development
 markdown: kramdown
+collections_dir: page_collections
 collections:
   days:
     output: true
     permalink: /days/:path
-    sort_by: ord_day
+    sort_by: ord_day # Integer
+  notes:
+    output: true
+    permalink: /notes/:path
+  projects:
+    output: true
+    permalink: /projects/:path
+  
 defaults:
   sass:
     load_paths:
