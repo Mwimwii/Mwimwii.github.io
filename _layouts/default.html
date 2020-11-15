@@ -13,11 +13,11 @@
       <div class="row">
         <aside class="col-md" >
           <header>
-            <h1 data-id="this-was-cs5"><a href="/">This is CS50.GQ</a></h1>
+            <h1 data-id="this-was-cs5"><a href="/">CS50’s Web Programming with Python and JavaScript</a></h1>
 
             <p>
-              <a href="https://www.harvard.edu/">Harvard University x Mulungushi University</a><br />
-              Fall 2020
+              <a href="https://www.harvard.edu/">OpenCourseWare</a><br />
+              Spring 2020
             </p>
           </header>
 <!-- 
@@ -40,10 +40,16 @@
           >
             Menu
           </button>
+          <br>
+          <p><a href="https://brianyu.me">Brian Yu</a><br>
+            <a href="mailto:brian@cs.harvard.edu">brian@cs.harvard.edu</a></p>
 
-          <nav class="collapse d-md-block" id="nav">
-            <hr />
-            <!-- Navigation -->
+          <p><a href="https://cs50.gq/mwila">Mwila Nyirongo</a><br>
+            <a href="mailto:mwila@themodmin.com">mwila@themodmin.com</a><br>
+            <a href="https://github.com/Mwimwii" class="mr-2"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/mwila-nyirongo-549ab9172/" class="mr-2"><i class="fab fa-linkedin"></i></a></p>
+            <nav class="collapse d-md-block" id="nav">
+              <hr />
+              <!-- Navigation -->
             <ul>
               {% for day in site.days %}
               <li data-marker="*"><a href="{{day.url}}">Day {{day.day}}</a> {{day.title}}</li>
